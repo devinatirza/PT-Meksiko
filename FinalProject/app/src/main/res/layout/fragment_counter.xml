@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/counter_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="0"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/increment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="24sp"
+        android:layout_toLeftOf="@+id/reset_button"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/decrement_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="24sp"
+        android:layout_toLeftOf="@+id/increment_button"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textSize="24sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

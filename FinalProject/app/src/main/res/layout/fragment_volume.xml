@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/volume_calculator_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black" />
+
+    <EditText
+        android:id="@+id/etWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/width_hint"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/height_hint"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/length_hint"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spinnerShape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/volume_calculator_shapes"
+        android:prompt="@string/shape_prompt" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/calculate_button_text" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+</LinearLayout>

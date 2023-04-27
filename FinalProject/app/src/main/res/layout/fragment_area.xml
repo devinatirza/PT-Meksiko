@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Area Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/length_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Length"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/width_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Width"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/base_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Base"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/height_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Height"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:padding="16dp" />
+
+    <RadioGroup
+        android:id="@+id/shape_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/square_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Square" />
+
+        <RadioButton
+            android:id="@+id/triangle_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Triangle" />
+
+        <RadioButton
+            android:id="@+id/circle_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Circle" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
